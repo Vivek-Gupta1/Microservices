@@ -1,0 +1,14 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+server:
+  port: 2222
+spring:
+  application:
+    name: Welcome-Api
+eureka:
+  client:
+    service-url:
+       defaultZone: http://localhost:8761/eureka/

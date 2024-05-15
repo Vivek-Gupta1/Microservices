@@ -1,0 +1,3 @@
+spring.application.name=Welcome-Api
+server.port=2222
+management.endpoints.web.exposure.include='*'

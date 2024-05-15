@@ -1,0 +1,25 @@
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+#      
+      routes: 
+             - id: Welcome-Api
+               uri: lb://WELCOME-API
+               predicates:
+               - Path=/welcome
+             - id: Open-Data-Api
+               uri: lb://OPEN-DATA-API
+               predicates:
+               - Path=/getdata
+  application:
+    name: ApiGate-Way
+server:
+  port: 5555
+
+
+ 
+

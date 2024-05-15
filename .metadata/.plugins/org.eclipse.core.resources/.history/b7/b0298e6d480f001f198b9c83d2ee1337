@@ -1,0 +1,2 @@
+spring.application.name=ApiGate-Way
+spring.port=5555
